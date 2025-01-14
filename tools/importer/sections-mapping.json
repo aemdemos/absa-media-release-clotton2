@@ -1,0 +1,123 @@
+{
+  "url": "https://www.absa.africa/media-statements/2024/absa-successfully-closes-usd-300-million-green-syndicated-term-loan-facility/",
+  "sanitizedPath": "/media-statements/2024/absa-successfully-closes-usd-300-million-green-syndicated-term-loan-facility/index",
+  "autoDetect": false,
+  "mapping": [
+    {
+      "id": "1",
+      "path": "/nav",
+      "sections": [
+        {
+          "id": "1-1",
+          "blocks": [
+            {
+              "id": "box-id--855297627",
+              "x": 0,
+              "y": 0,
+              "width": 1268,
+              "height": 69,
+              "xpath": "/html[1]/body[1]/header[1]/nav[1]",
+              "layout": {
+                "numCols": 0,
+                "numRows": 0
+              },
+              "color": "rgb(148, 0, 211)",
+              "mapping": "header",
+              "customBlockName": "header"
+            }
+          ],
+          "settings": {}
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "path": "/media-statements/2024/absa-successfully-closes-usd-300-million-green-syndicated-term-loan-facility/index",
+      "sections": [
+        {
+          "id": "2-1",
+          "blocks": [
+            {
+              "id": "box-id--1102402209",
+              "x": 0,
+              "y": 478,
+              "width": 1268,
+              "height": 1936,
+              "xpath": "/html[1]/body[1]/div[4]",
+              "layout": {
+                "numCols": 2,
+                "numRows": 1
+              },
+              "childrenXpaths": [
+                {
+                  "xpath": "/html[1]/body[1]/div[4]/div[1]/div[1]",
+                  "xpathWithDetails": "/html[@class=\"js\"]/body[@class=\"post-template-default single single-post postid-13869 single-format-standard wp-custom-logo wp-embed-responsive fl-builder-2-8-5-1 singular enable-search-modal has-post-thumbnail has-single-pagination showing-comments hide-avatars footer-top-visible\"]/div[@class=\"container post-inner thin\"]/div[@class=\"row entry-content DesktopDisplay\"]/div[@class=\"col-4\"]"
+                },
+                {
+                  "xpath": "/html[1]/body[1]/div[4]/div[1]/div[2]",
+                  "xpathWithDetails": "/html[@class=\"js\"]/body[@class=\"post-template-default single single-post postid-13869 single-format-standard wp-custom-logo wp-embed-responsive fl-builder-2-8-5-1 singular enable-search-modal has-post-thumbnail has-single-pagination showing-comments hide-avatars footer-top-visible\"]/div[@class=\"container post-inner thin\"]/div[@class=\"row entry-content DesktopDisplay\"]/div[@class=\"col-8 MainParagraph\"]"
+                }
+              ],
+              "color": "rgb(0, 0, 255)",
+              "mapping": "columns",
+              "customBlockName": "ai-columns1"
+            },
+            {
+              "id": "box-id--823498960",
+              "x": 507,
+              "y": 2430,
+              "width": 253,
+              "height": 52,
+              "xpath": "/html[1]/body[1]/nav[1]",
+              "layout": {
+                "numCols": 0,
+                "numRows": 0
+              },
+              "color": "rgb(0, 255, 0)",
+              "mapping": "defaultContent",
+              "customBlockName": "ai-default1"
+            }
+          ],
+          "settings": {}
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "path": "/footer",
+      "sections": [
+        {
+          "id": "3-1",
+          "blocks": [
+            {
+              "id": "box-id--953139808",
+              "x": 0,
+              "y": 2498,
+              "width": 1268,
+              "height": 489,
+              "xpath": "/html[1]/body[1]/footer[1]",
+              "layout": {
+                "numCols": 1,
+                "numRows": 2
+              },
+              "childrenXpaths": [
+                {
+                  "xpath": "/html[1]/body[1]/footer[1]/div[1]",
+                  "xpathWithDetails": "id(\"site-footer\")/div[@class=\"container-fluid\"]"
+                },
+                {
+                  "xpath": "/html[1]/body[1]/footer[1]/div[2]",
+                  "xpathWithDetails": "id(\"site-footer\")/div[@class=\"row terms\"]"
+                }
+              ],
+              "color": "rgb(255, 255, 0)",
+              "mapping": "columns",
+              "customBlockName": "ai-columns2"
+            }
+          ],
+          "settings": {}
+        }
+      ]
+    }
+  ]
+}
