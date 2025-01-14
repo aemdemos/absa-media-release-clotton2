@@ -1,25 +1,24 @@
 
 .header-wrapper {
+  width: 100%;
+  background-color: white; /* Enforce solid color white */
   position: relative;
-  background-image: url('/media_1e8fafc57adc810f22d37f7b162b2aa958ee861f9.jpeg?width=2000&format=webply&optimize=medium');
-  background-size: cover;
-  background-position: center;
-  height: 400px; /* Adjust height to ensure full coverage */
 }
 
 .header-wrapper .nav-wrapper {
-  background-color: transparent; /* Remove semi-transparent background */
+  background-color: white; /* Ensure the background is white */
   width: 100%;
   z-index: 2;
-  position: fixed;
+  position: fixed; /* Fix the position of the nav-wrapper */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Distribute space between elements */
   align-items: center;
   top: 0;
   left: 0;
   padding: 10px 24px; /* Adjust padding as needed */
 }
 
+/* Flex container for the brand logo, navigation links, and tools */
 .header-wrapper nav {
   display: flex;
   justify-content: space-between;
@@ -29,6 +28,7 @@
   font-family: var(--body-font-family);
 }
 
+/* Set the brand logo section to flex */
 .header-wrapper nav .nav-brand {
   order: 1;
   display: flex;
@@ -40,17 +40,17 @@
 .header-wrapper nav .nav-brand img {
   width: 50px;
   height: auto;
-  object-fit: contain;
+  object-fit: contain; /* Ensure the image is not stretched */
 }
 
+/* Set the nav sections to be flex and distribute space evenly */
 .header-wrapper nav .nav-sections {
   order: 2;
   display: flex;
   align-items: center;
-  flex-grow: 1;
-  justify-content: center;
+  justify-content: center; /* Center the navigation links */
   gap: 24px;
-  white-space: nowrap;
+  flex-grow: 1;
 }
 
 .header-wrapper nav .nav-sections ul {
@@ -82,14 +82,17 @@
   display: block;
 }
 
+/* Flex container for the tools section (search and country select) */
 .header-wrapper nav .nav-tools {
   order: 3;
   display: flex;
   align-items: center;
   padding-left: 20px;
   border-left: 1px solid #e0e0e0;
+  margin-left: auto; /* Push tools section to the far right */
 }
 
+/* Set the content inside nav-tools to be side by side */
 .header-wrapper nav .nav-tools p {
   display: flex;
   align-items: center;
@@ -97,13 +100,24 @@
   white-space: nowrap;
 }
 
+.header-wrapper nav .nav-tools p:first-child {
+  margin-right: 20px; /* Additional space between search and select country */
+}
+
+/* Ensure text color is black */
+.header-wrapper nav .nav-sections a, .header-wrapper nav .nav-tools p {
+  color: black; /* Change text color to black */
+}
+
+/* Hide the hamburger menu */
 .header-wrapper nav .nav-hamburger {
   display: none;
   visibility: hidden;
 }
 
+/* Ensure proper spacing between elements */
 .header-wrapper .nav-wrapper {
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -114,35 +128,4 @@ header nav {
 
 header {
   display: flex;
-}
-
-.header-wrapper .nav-tools h1, .header-wrapper .nav-tools h2 {
-  color: white;
-  text-align: center;
-  margin: 5px 0;
-}
-
-.header-wrapper .default-content-wrapper h1 a, .header-wrapper .default-content-wrapper h2 {
-  color: #fff;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-/* Centralize text overlays */
-.header-wrapper .default-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  position: absolute;
-  top: 60%; /* Adjust to lower the text overlays */
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* Ensure proper alignment of text elements */
-.header-wrapper .default-content-wrapper h1, .header-wrapper .default-content-wrapper h2 {
-  margin: 0;
 }

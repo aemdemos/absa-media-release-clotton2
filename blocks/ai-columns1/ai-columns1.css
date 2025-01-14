@@ -6,18 +6,19 @@
   align-items: flex-start; /* Ensure alignment at the top */
 }
 
-/* Style the left column (social media icons) */
+/* Style the left column (social media icons and SHARE text) */
 .ai-columns1-wrapper > .ai-columns1 > div:first-child {
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Align items to the start */
+  gap: 10px; /* Ensure gap between SHARE text and icons */
 }
 
-/* Ensure "SHARE" text is at the top and icons are below it */
-.ai-columns1-wrapper > .ai-columns1 > div:first-child > div {
+/* Ensure "SHARE" text and icons are vertically aligned */
+.ai-columns1-wrapper > .ai-columns1 > div:first-child > div:first-child {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Ensure icons are stacked vertically */
   align-items: flex-start; /* Align items to the start */
   gap: 10px; /* Adjust the gap between icons as needed */
 }
@@ -26,25 +27,26 @@
 .ai-columns1-wrapper > .ai-columns1 > div:last-child {
   flex: 1;
   display: flex;
-  flex-direction: column; /* Ensure the text content is stacked vertically */
+  flex-direction: column; /* Ensure text content is stacked vertically */
+  margin-left: 0; /* Remove extra left margin for proper alignment */
 }
 
 /* Optional: style for the SHARE text */
 .ai-columns1-wrapper > .ai-columns1 > div:first-child > div:first-child p:first-of-type {
   font-weight: bold;
-  margin-bottom: 5px; /* Reduce the margin below the SHARE text */
+  margin-bottom: 10px; /* Adjust margin below the SHARE text */
 }
 
 /* Ensure icons are correctly sized */
 .ai-columns1-wrapper > .ai-columns1 > div:first-child > div:first-child img {
   width: 30px; /* Adjust size as needed */
   height: auto;
-  margin-bottom: 5px; /* Reduce the margin below each icon */
+  margin-bottom: 10px; /* Adjust margin below each icon */
 }
 
 /* Ensure paragraphs have some space between them */
 .ai-columns1-wrapper > .ai-columns1 p {
-  margin-bottom: 10px;
+  margin-bottom: 15px; /* Increase space between paragraphs */
 }
 
 /* Style for the bank list subheadings */
@@ -59,5 +61,11 @@
 @media (max-width: 768px) {
   .ai-columns1-wrapper > .ai-columns1 {
     flex-direction: column;
+    gap: 10px; /* Adjust gap between sections for smaller screens */
+  }
+
+  /* Reduce icon size for smaller screens */
+  .ai-columns1-wrapper > .ai-columns1 > div:first-child > div:first-child img {
+    width: 25px;
   }
 }

@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-.ai-default-wrapper > .ai-default > div > div {
+.ai-default-wrapper > .ai-default > div {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -17,25 +17,24 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 8px; /* Adjust the gap between the links to match original image */
+  gap: 12px; /* Adjust the gap as needed for spacing between Previous and Next */
 }
 
 .ai-default-wrapper > .ai-default a {
-  color: #d61342; /* Match the color of the text */
+  color: #e60028; /* Assuming the color from the image */
   text-decoration: none;
-  font-weight: bold;
-  position: relative;
-  font-size: 12px; /* Further adjust font size to match original image */
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold; /* Ensure font weight is bold */
 }
 
 .ai-default-wrapper > .ai-default a:first-of-type::before {
   content: '\2190'; /* Unicode for left arrow */
-  margin-right: 4px; /* Reduce space between arrow and text */
-  font-size: 12px; /* Further adjust arrow size to match original image */
+  margin-right: 6px; /* Adjust the margin as needed */
+  font-size: 18px; /* Ensure arrow size matches text size */
 }
 
 .ai-default-wrapper > .ai-default a:last-of-type::after {
   content: '\2192'; /* Unicode for right arrow */
-  margin-left: 4px; /* Reduce space between text and arrow */
-  font-size: 12px; /* Further adjust arrow size to match original image */
+  margin-left: 6px; /* Adjust the margin as needed */
+  font-size: 18px; /* Ensure arrow size matches text size */
 }
