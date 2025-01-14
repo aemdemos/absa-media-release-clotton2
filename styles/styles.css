@@ -32,28 +32,6 @@
 }
 
 /* fallback fonts */
-@font-face {
-  font-family:"Sourcesanspro-Extralight Fallback";
-  font-style:normal;
-  font-weight:normal;
-  src:local("Arial");
-  ascent-override:104.50%;
-  descent-override:32.72%;
-  line-gap-override:0.00%;
-  size-adjust:89.39%;
-}
-
-@font-face {
-  font-family:"Sourcesanspro-light Fallback";
-  font-style:normal;
-  font-weight:normal;
-  src:local("Arial");
-  ascent-override:103.48%;
-  descent-override:33.69%;
-  line-gap-override:0.00%;
-  size-adjust:90.74%;
-}
-
 @media (width>=900px) {
   :root {
     --body-font-size-m: 18px;
