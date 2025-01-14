@@ -1,0 +1,121 @@
+
+.ai-columns2-wrapper > .ai-columns2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ai-columns2-wrapper > .ai-columns2 > div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+}
+
+.ai-columns2-wrapper > .ai-columns2 > div:first-child > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ai-columns2-wrapper > .ai-columns2 > div:first-child > div > p {
+  margin: 0;
+}
+
+.ai-columns2-wrapper > .ai-columns2 > div:first-child > div > p:nth-child(4) {
+  margin-top: 10px;
+}
+
+.ai-columns2-wrapper > .ai-columns2 > div:first-child > div > p:last-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.ai-columns2-wrapper .button-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ai-columns2-wrapper .button {
+  background-color: #d71921; /* Adjust the background color to red */
+  color: white;
+}
+
+.ai-columns2-wrapper .button:hover {
+  text-decoration: underline;
+}
+
+.ai-columns2-wrapper img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.ai-columns2-wrapper > .ai-columns2 > div:first-child p strong em {
+  display: block;
+  margin-top: 20px;
+}
+
+.ai-columns2-wrapper::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #931123, #b60d28, #d71921, #ff6f14, #fcae1e, #b60d28, #931123);
+  margin-top: 20px;
+}
+
+.ai-columns2-wrapper .ai-columns2-1-cols div p {
+  text-align: left; /* Left-align the text in the footer */
+  font-size: 0.8em; /* Adjust the font size if necessary */
+  color: #666; /* Adjust the color if necessary */
+  padding: 10px 0;
+  margin: 0;
+}
+
+.ai-columns2-wrapper .ai-columns2-1-cols div p a {
+  margin: 0 5px;
+  color: #d71921; /* Color for the links in the footer */
+}
+
+.ai-columns2-wrapper .ai-columns2-1-cols div p a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 900px) {
+  .ai-columns2-wrapper > .ai-columns2 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .ai-columns2-wrapper > .ai-columns2 > div:first-child {
+    padding-right: 20px;
+  }
+
+  .ai-columns2-wrapper > .ai-columns2 > div:last-child {
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  .ai-columns2-wrapper > .ai-columns2 > div:first-child > div > p:nth-child(4) {
+    margin-top: 10px;
+  }
+
+  .ai-columns2-wrapper > .ai-columns2 > div:first-child > div > p:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+
+  .ai-columns2-wrapper > .ai-columns2 > div:last-child {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}

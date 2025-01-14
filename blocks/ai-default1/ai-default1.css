@@ -1,0 +1,48 @@
+
+.ai-default1-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ai-default1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ai-default1 > div > div {
+  display: flex;
+  flex-direction: row; /* Ensure elements are side by side */
+  justify-content: center;
+  align-items: center;
+  gap: 50px; /* Increase gap between elements */
+}
+
+.ai-default1 a {
+  text-decoration: none;
+  color: #E00034; /* Red color to match the original image */
+  display: flex;
+  align-items: center;
+  font-size: 18px; /* Adjust font size to match original image */
+}
+
+.ai-default1 p {
+  display: flex;
+  flex-direction: row; /* Ensure elements are side by side */
+  align-items: center;
+  gap: 50px; /* Ensure gap between the links within the paragraph */
+}
+
+/* Adding arrows using ::before and ::after pseudo-elements */
+.ai-default1 a[title="Previous"]::before {
+  content: '←';
+  margin-right: 5px; /* Spacing between arrow and text */
+  color: #E00034; /* Red color to match the original image */
+}
+
+.ai-default1 a[title="Next"]::after {
+  content: '→';
+  margin-left: 5px; /* Spacing between text and arrow */
+  color: #E00034; /* Red color to match the original image */
+}
