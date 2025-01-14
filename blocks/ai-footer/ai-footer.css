@@ -1,0 +1,97 @@
+
+.ai-footer-wrapper > .ai-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Top section layout */
+.ai-footer-wrapper > .ai-footer > div:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.ai-footer-wrapper > .ai-footer > div:first-child > div:first-child {
+  flex: 1;
+  margin-right: 20px; /* Add space between the two columns */
+}
+
+.ai-footer-wrapper > .ai-footer > div:first-child > div:nth-child(2) {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Ensure text and icons are in a column */
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.ai-footer-wrapper > .ai-footer > div:first-child > div:nth-child(2) p {
+  display: flex;
+  flex-direction: row; /* Ensure icons are in a row */
+  align-items: center;
+  margin: 0; /* Remove any default margin */
+}
+
+.ai-footer-wrapper > .ai-footer img {
+  width: auto;
+  height: 30px; /* Set a smaller, consistent size */
+  margin-right: 10px; /* Add spacing between icons */
+}
+
+/* Adjust button spacing */
+.ai-footer-wrapper > .block.ai-footer .button-container {
+  margin-top: 20px; /* Increase spacing above the button */
+}
+
+/* Center align the middle section containing the links */
+.ai-footer-wrapper > .ai-footer > div:nth-child(2) {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Bottom section: horizontal color bar */
+.ai-footer-wrapper::after {
+  content: '';
+  display: block;
+  height: 20px;
+  background: linear-gradient(to right, #B22222, #FF4500, #FFD700, #ADFF2F, #32CD32, #00CED1, #1E90FF, #4B0082, #8A2BE2);
+  width: 100%;
+}
+
+/* Adjust button style for specificity */
+.ai-footer-wrapper > .block.ai-footer .button {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  margin: 12px 0;
+  border: 2px solid transparent;
+  border-radius: 2.4em;
+  padding: 0.5em 1.2em;
+  font-family: var(--body-font-family);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--link-color);
+  color: var(--background-color);
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ai-footer-wrapper > .block.ai-footer .button:hover,
+.ai-footer-wrapper > .block.ai-footer .button:focus {
+  background-color: var(--link-hover-color);
+  cursor: pointer;
+}
+
+.ai-footer-wrapper > .block.ai-footer .button.secondary {
+  background-color: unset;
+  border: 2px solid currentcolor;
+  color: var(--text-color);
+}

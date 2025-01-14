@@ -1,13 +1,23 @@
 
+.header-wrapper {
+  position: relative;
+  background-image: url('/media_1e8fafc57adc810f22d37f7b162b2aa958ee861f9.jpeg?width=2000&format=webply&optimize=medium');
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust height to ensure full coverage */
+}
+
 .header-wrapper .nav-wrapper {
-  background-color: white;
+  background-color: transparent; /* Remove semi-transparent background */
   width: 100%;
   z-index: 2;
   position: fixed;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e0e0e0;
+  top: 0;
+  left: 0;
+  padding: 10px 24px; /* Adjust padding as needed */
 }
 
 .header-wrapper nav {
@@ -16,9 +26,7 @@
   align-items: center;
   width: 100%;
   max-width: 1264px;
-  padding: 0 24px;
   font-family: var(--body-font-family);
-  height: var(--nav-height);
 }
 
 .header-wrapper nav .nav-brand {
@@ -106,4 +114,35 @@ header nav {
 
 header {
   display: flex;
+}
+
+.header-wrapper .nav-tools h1, .header-wrapper .nav-tools h2 {
+  color: white;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.header-wrapper .default-content-wrapper h1 a, .header-wrapper .default-content-wrapper h2 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centralize text overlays */
+.header-wrapper .default-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  top: 60%; /* Adjust to lower the text overlays */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Ensure proper alignment of text elements */
+.header-wrapper .default-content-wrapper h1, .header-wrapper .default-content-wrapper h2 {
+  margin: 0;
 }
