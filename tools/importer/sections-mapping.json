@@ -11,17 +11,17 @@
           "id": "1-1",
           "blocks": [
             {
-              "id": "box-id--1102402240",
+              "id": "box-id--855297627",
               "x": 0,
               "y": 0,
               "width": 1268,
-              "height": 478,
-              "xpath": "/html[1]/body[1]/div[3]",
+              "height": 69,
+              "xpath": "/html[1]/body[1]/header[1]/nav[1]",
               "layout": {
                 "numCols": 0,
                 "numRows": 0
               },
-              "color": "rgb(75, 0, 130)",
+              "color": "rgb(148, 0, 211)",
               "mapping": "header",
               "customBlockName": "header"
             }
@@ -37,6 +37,21 @@
         {
           "id": "2-1",
           "blocks": [
+            {
+              "id": "box-id--1102402240",
+              "x": 0,
+              "y": 0,
+              "width": 1268,
+              "height": 478,
+              "xpath": "/html[1]/body[1]/div[3]",
+              "layout": {
+                "numCols": 0,
+                "numRows": 0
+              },
+              "color": "rgb(75, 0, 130)",
+              "mapping": "hero",
+              "customBlockName": "ai-hero"
+            },
             {
               "id": "box-id--1102402209",
               "x": 0,
@@ -112,7 +127,7 @@
               ],
               "color": "rgb(255, 255, 0)",
               "mapping": "columns",
-              "customBlockName": "ai-footer"
+              "customBlockName": "ai-columns2"
             }
           ],
           "settings": {}
