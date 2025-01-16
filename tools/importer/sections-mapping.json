@@ -38,6 +38,21 @@
           "id": "2-1",
           "blocks": [
             {
+              "id": "box-id--1102402240",
+              "x": 0,
+              "y": 0,
+              "width": 3280,
+              "height": 462,
+              "xpath": "/html[1]/body[1]/div[3]",
+              "layout": {
+                "numCols": 0,
+                "numRows": 0
+              },
+              "color": "rgb(75, 0, 130)",
+              "mapping": "hero",
+              "customBlockName": "ai-hero"
+            },
+            {
               "id": "box-id--1102402209",
               "x": 0,
               "y": 478,
@@ -111,8 +126,8 @@
                 }
               ],
               "color": "rgb(255, 255, 0)",
-              "mapping": "defaultContent",
-              "customBlockName": "ai-columns2"
+              "mapping": "columns",
+              "customBlockName": "ai-footer"
             }
           ],
           "settings": {}
